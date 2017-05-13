@@ -42,6 +42,7 @@ var pool = new Pool(config)
 
 //===============routing========
 
+
 app.route('/')
     .get(function(req, res) {
         res.render('home')
@@ -80,16 +81,40 @@ app.route('/')
         //     })
     })
 
-
-
-
-
-
-
-
-
-
  
+
+
+app.route('/resepmu')
+    .get(function(req, res) {
+        res.render('resepmu');
+
+    })
+    .post(function(req, res) {
+        
+    })
+
+
+app.route('/signup')
+    .get(function(req, res) {
+        res.render('signup');
+
+    })
+    .post(function(req, res) {
+        
+    })
+
+
+app.route('/signin')
+    .get(function(req, res) {
+        res.render('signin');
+
+    })
+    .post(function(req, res) {
+        
+    })
+
+
+  
 
 //============webserver=====
 
